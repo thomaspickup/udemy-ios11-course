@@ -9,7 +9,7 @@ App Name       | Completed  | ReadMe Created  | Quick Link
 -------------- | :--------: | :-------------: | :-----------: 
 Swoosh         | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-swoosh)
 Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-coder)
-Window Shopper | &#10003;   | X               | [Link](https://github.com/thomaspickup/ios11-window)
+Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-window)
 Smack          | &#10003;   | X               | [Link](https://github.com/thomaspickup/ios11-smack)
 Pixel City     | X          | X               | [Link](https://github.com/thomaspickup/ios11-pixelcity)
 Daily Dose     | X          | X               | [Link](https://github.com/thomaspickup/ios11-dailydose)
@@ -38,7 +38,9 @@ It used also taught us the basics of how we can display data in an app, this tim
 ![Coder Swag Shirt Collection View](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/2.%20Coder%20Swag/IMG_0029.png?raw=true)
 
 ## :money_with_wings: Window Shopper
+Window Shopper is the first propper app that we could submit to the app store. It allows us to submit our hourly wage and an amount that an item would cost and work out how many hours we would have to work to buy it. 
 
+It is the first app where we code logic into the app as well as focusing on the design. We have a custom button which snaps to the keyboard, as well as custom text fields with currency symbols which match the current locale. The app also demonstrates how we would run basic tests to make sure that our app logic is working as expected.
 ### [Repository](https://github.com/thomaspickup/ios11-window)
 ### Screenshots
 ![Window Shopper](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/3.%20Window%20Shopper/IMG_0031.png?raw=true)
