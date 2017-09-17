@@ -25,19 +25,19 @@ This is the first app you design in the course and touches on features such as c
 ### Screenshots
 ![Swoosh Main](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/1.%20Swoosh/IMG_0024.png?raw=true)
 ![Swoosh Select League](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/1.%20Swoosh/IMG_0025.png?raw=true)
-## Coder Swag
+## :shirt: Coder Swag
 
 ### Screenshots
 ![Coder Swag Main](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/2.%20Coder%20Swag/IMG_0027.png?raw=true)
 ![Coder Swag Shirt Collection View](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/2.%20Coder%20Swag/IMG_0029.png?raw=true)
-## Window Shopper
+## :money_with_wings: Window Shopper
 
 ### Screenshots
 ![Window Shopper](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/3.%20Window%20Shopper/IMG_0031.png?raw=true)
 ![Window Shopper](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/3.%20Window%20Shopper/IMG_0032.png?raw=true)
-## Smack
+## :mega: Smack
 
-## Pixel City
+## :camera: Pixel City
 
 ## Daily Dose
 
