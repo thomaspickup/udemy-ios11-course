@@ -10,7 +10,7 @@ App Name       | Completed  | ReadMe Created  | Quick Link
 Swoosh         | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-swoosh)
 Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-coder)
 Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-window)
-Smack          | &#10003;   | X               | [Link](https://github.com/thomaspickup/ios11-smack)
+Smack          | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-smack)
 Pixel City     | X          | X               | [Link](https://github.com/thomaspickup/ios11-pixelcity)
 Daily Dose     | X          | X               | [Link](https://github.com/thomaspickup/ios11-dailydose)
 Goal Post      | X          | X               | [Link](https://github.com/thomaspickup/ios11-goalpost)
@@ -47,10 +47,16 @@ It is the first app where we code logic into the app as well as focusing on the 
 ![Window Shopper](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/3.%20Window%20Shopper/IMG_0032.png?raw=true)
 
 ## :mega: Smack
+The main feature of this Swift 4 Project is to demonstrate how Server <-> Client communications can work. It allows us to fetch data from a server and display it in the app as well as uploading messages and data back to that server and pushing it out to other users. 
+
+The app itself allows the user to create an account and then create channels which themselves and other users can post into. Much like the real world application Slack. The user can browse through all the different channels that they have access to and post in any of them. The server side API is wrote by Devslopes and is deployed on a Heroku Instance.
 
 ### [Repository](https://github.com/thomaspickup/ios11-smack)
 ### Screenshots
-
+![Main Screen](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/4.Smack/IMG_0035.png?raw=true)
+![Channel Screen](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/4.Smack/IMG_0034.png?raw=true)
+![Create Channel Screen](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/4.Smack/IMG_0036.png?raw=true)
+![Login Screen](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/4.Smack/IMG_0033.png?raw=true)
 ## :camera: Pixel City
 
 ### [Repository](https://github.com/thomaspickup/ios11-pixelcity)
