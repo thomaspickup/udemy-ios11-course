@@ -11,8 +11,8 @@ Swoosh         | &#10003;   | &#10003;        | [Link](https://github.com/thomas
 Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-coder)
 Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-window)
 Smack          | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-smack)
-Pixel City     | X          | X               | [Link](https://github.com/thomaspickup/ios11-pixelcity)
-Daily Dose     | X          | X               | [Link](https://github.com/thomaspickup/ios11-dailydose)
+Pixel City     | &#10003;   | -               | [Link](https://github.com/thomaspickup/ios11-pixelcity)
+Daily Dose     | -          | X               | [Link](https://github.com/thomaspickup/ios11-dailydose)
 Goal Post      | X          | X               | [Link](https://github.com/thomaspickup/ios11-goalpost)
 BreakPoint     | X          | X               | [Link](https://github.com/thomaspickup/ios11-breakpoint)
 Vision         | X          | X               | [Link](https://github.com/thomaspickup/ios11-vision)
@@ -58,8 +58,22 @@ The app itself allows the user to create an account and then create channels whi
 ![Create Channel Screen](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/4.Smack/IMG_0036.png?raw=true)
 ![Login Screen](https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/4.Smack/IMG_0033.png?raw=true)
 ## :camera: Pixel City
+Pixel City demonstrates how to use the MapKit as well as the Flickr API. In the app we create a custom annotation on the map which then pulls down images from Flickr relating to the latitude and longitude of the dropped annotation. We also look into how to implement Peak and Pop through the 3D touch interface.
+
+### Extra Credit 
+At the end of this section, the instructor challenged us to do some challenges on our own and add in some extra features. These are ongoing - so far I have added the following features:
+
+* Title of image shows on vcPop.
+* Username of the person shows on vcPop.
+
+I am planning on adding the following features whilst I am completing the rest of this course: 
+
+* Date // Time for the image shows on vcPop.
+* Map location for the image shows on vcPop.
+* Images in the collection view on vcMap display better.
 
 ### [Repository](https://github.com/thomaspickup/ios11-pixelcity)
+
 ### Screenshots
 
 ## :newspaper: Daily Dose
