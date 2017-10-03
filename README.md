@@ -12,7 +12,7 @@ Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomas
 Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-window)
 Smack          | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-smack)
 Pixel City     | &#10003;   | -               | [Link](https://github.com/thomaspickup/ios11-pixelcity)
-Daily Dose     | -          | X               | [Link](https://github.com/thomaspickup/ios11-dailydose)
+Daily Dose     | &#10003;   | -               | [Link](https://github.com/thomaspickup/ios11-dailydose)
 Goal Post      | X          | X               | [Link](https://github.com/thomaspickup/ios11-goalpost)
 BreakPoint     | X          | X               | [Link](https://github.com/thomaspickup/ios11-breakpoint)
 Vision         | X          | X               | [Link](https://github.com/thomaspickup/ios11-vision)
