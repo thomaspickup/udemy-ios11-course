@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE3FAEA01F8A30FE000D482C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FAE9F1F8A30FE000D482C /* AppDelegate.swift */; };
-		FE3FAEA21F8A30FE000D482C /* vcMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FAEA11F8A30FE000D482C /* vcMain.swift */; };
+		FE3FAEA21F8A30FE000D482C /* vcGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FAEA11F8A30FE000D482C /* vcGoals.swift */; };
 		FE3FAEA51F8A30FE000D482C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3FAEA31F8A30FE000D482C /* Main.storyboard */; };
 		FE3FAEA81F8A30FE000D482C /* Goal_Post.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE3FAEA61F8A30FE000D482C /* Goal_Post.xcdatamodeld */; };
 		FE3FAEAA1F8A30FE000D482C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3FAEA91F8A30FE000D482C /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		FE3FAE9C1F8A30FE000D482C /* Goal Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goal Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3FAE9F1F8A30FE000D482C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE3FAEA11F8A30FE000D482C /* vcMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcMain.swift; sourceTree = "<group>"; };
+		FE3FAEA11F8A30FE000D482C /* vcGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcGoals.swift; sourceTree = "<group>"; };
 		FE3FAEA41F8A30FE000D482C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE3FAEA71F8A30FE000D482C /* Goal_Post.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal_Post.xcdatamodel; sourceTree = "<group>"; };
 		FE3FAEA91F8A30FE000D482C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		FE3FAEB41F8A3112000D482C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FE3FAEA11F8A30FE000D482C /* vcMain.swift */,
+				FE3FAEA11F8A30FE000D482C /* vcGoals.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3FAEA21F8A30FE000D482C /* vcMain.swift in Sources */,
+				FE3FAEA21F8A30FE000D482C /* vcGoals.swift in Sources */,
 				FE3FAEA01F8A30FE000D482C /* AppDelegate.swift in Sources */,
 				FE3FAEA81F8A30FE000D482C /* Goal_Post.xcdatamodeld in Sources */,
 			);
@@ -313,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VEG7S4WYT5;
 				INFOPLIST_FILE = "Goal Post/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.thomaspickup.Goal-Post";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VEG7S4WYT5;
 				INFOPLIST_FILE = "Goal Post/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.thomaspickup.Goal-Post";
 				PRODUCT_NAME = "$(TARGET_NAME)";
