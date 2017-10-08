@@ -7,13 +7,13 @@ Below I have listed my progress and links to all the course repositories, as wel
 ## Progress
 App Name       | Completed  | ReadMe Created  | Quick Link  
 -------------- | :--------: | :-------------: | :-----------: 
-Swoosh         | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-swoosh)
-Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-coder)
-Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-window)
-Smack          | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/ios11-smack)
-Pixel City     | &#10003;   | -               | [Link](https://github.com/thomaspickup/ios11-pixelcity)
-Daily Dose     | &#10003;   | -               | [Link](https://github.com/thomaspickup/ios11-dailydose)
-Goal Post      | -          | X               | [Link](https://github.com/thomaspickup/ios11-goalpost)
-BreakPoint     | X          | X               | [Link](https://github.com/thomaspickup/ios11-breakpoint)
-Vision         | X          | X               | [Link](https://github.com/thomaspickup/ios11-vision)
-Ramp Up        | X          | X               | [Link](https://github.com/thomaspickup/ios11-rampup)
+Swoosh         | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-swoosh)
+Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-coder)
+Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-window)
+Smack          | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-smack)
+Pixel City     | &#10003;   | -               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-pixelcity)
+Daily Dose     | &#10003;   | -               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-dailydose)
+Goal Post      | -          | X               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-goalpost)
+BreakPoint     | X          | X               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-breakpoint)
+Vision         | X          | X               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-vision)
+Ramp Up        | X          | X               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-rampup)
