@@ -12,6 +12,8 @@ class vcGoals: UIViewController {
     // Outlets
     @IBOutlet weak var TableView: UITableView!
     
+    // Variables
+    
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
