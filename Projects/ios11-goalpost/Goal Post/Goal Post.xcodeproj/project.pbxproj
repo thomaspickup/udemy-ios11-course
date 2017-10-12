@@ -15,6 +15,7 @@
 		FE3FAEAD1F8A30FE000D482C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3FAEAB1F8A30FE000D482C /* LaunchScreen.storyboard */; };
 		FE570AEB1F8C049A00BC14CE /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE570AEA1F8C049A00BC14CE /* GoalCell.swift */; };
 		FEDDCF351F900B1100A37F95 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDCF341F900B1100A37F95 /* GoalType.swift */; };
+		FEDDCF3A1F900E7B00A37F95 /* vcCreateGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDCF391F900E7B00A37F95 /* vcCreateGoal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FE3FAEAE1F8A30FE000D482C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE570AEA1F8C049A00BC14CE /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		FEDDCF341F900B1100A37F95 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		FEDDCF391F900E7B00A37F95 /* vcCreateGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcCreateGoal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		FE3FAEB41F8A3112000D482C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FEDDCF391F900E7B00A37F95 /* vcCreateGoal.swift */,
 				FE3FAEA11F8A30FE000D482C /* vcGoals.swift */,
 			);
 			path = Controller;
@@ -180,6 +183,7 @@
 				FE570AEB1F8C049A00BC14CE /* GoalCell.swift in Sources */,
 				FEDDCF351F900B1100A37F95 /* GoalType.swift in Sources */,
 				FE3FAEA21F8A30FE000D482C /* vcGoals.swift in Sources */,
+				FEDDCF3A1F900E7B00A37F95 /* vcCreateGoal.swift in Sources */,
 				FE3FAEA01F8A30FE000D482C /* AppDelegate.swift in Sources */,
 				FE3FAEA81F8A30FE000D482C /* Goal_Post.xcdatamodeld in Sources */,
 			);
