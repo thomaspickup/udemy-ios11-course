@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class vcGoals: UIViewController {
     // Outlets
@@ -18,7 +19,12 @@ class vcGoals: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        TableView.isHidden = true;
+        // Temp Need To Change <
+        TableView.isHidden = false;
+        // >
+        
+        TableView.delegate = self;
+        TableView.dataSource = self;
     }
 
     // Actions
@@ -30,3 +36,21 @@ class vcGoals: UIViewController {
 
 }
 
+// Extensions
+// Table View Extension
+extension vcGoals: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = TableView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalCell else { return UITableViewCell() }
+        cell.configureCell(description: "Eat Salad twice a week", type: "Short Term", progress: 2)
+        return cell
+    }
+    
+    
+}
