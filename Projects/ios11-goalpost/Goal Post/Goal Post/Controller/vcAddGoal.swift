@@ -8,25 +8,34 @@
 
 import UIKit
 
-class vcAddGoal: UIViewController {
+class vcAddGoal: UIViewController, UITextFieldDelegate {
     // Outlets
     @IBOutlet weak var txtProgress: UITextField!
     @IBOutlet weak var btnCreateGoal: UIButton!
     
     // Variables
+    var goalDescription: String!
+    var goalType: GoalType!
     
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        btnCreateGoal.bindToKeyboard()
+        txtProgress.delegate = self
     }
     
     // Actions
     @IBAction func onCreateGoalPressed(_ sender: Any) {
-        
+        // Pass data to core data
+    }
+    @IBAction func onBackPressed(_ sender: Any) {
+        dismissDetails()
     }
     
     // Functions
-    
+    func initData(description: String, type: GoalType) {
+        self.goalDescription = description
+        self.goalType = type
+    }
 }
