@@ -35,7 +35,7 @@ class vcCreateGoal: UIViewController {
     }
     
     @IBAction func onBackButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetails()
     }
     
     // Functions

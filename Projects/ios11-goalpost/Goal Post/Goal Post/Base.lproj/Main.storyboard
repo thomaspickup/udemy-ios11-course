@@ -20,7 +20,7 @@
         <!--Vc Goals-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="vcGoals" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcGoals" id="BYZ-38-t0r" customClass="vcGoals" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                                         </constraints>
                                         <state key="normal" image="addGoal"/>
                                         <connections>
-                                            <segue destination="zXc-cp-S9k" kind="presentation" id="db1-rP-kbq"/>
+                                            <action selector="onGoalButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfg-3Q-orB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -186,7 +186,7 @@
         <!--Vc Create Goal-->
         <scene sceneID="77z-Rx-foH">
             <objects>
-                <viewController id="zXc-cp-S9k" customClass="vcCreateGoal" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcCreateGoal" id="zXc-cp-S9k" customClass="vcCreateGoal" customModule="Goal_Post" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Bv-WH-5ef">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
