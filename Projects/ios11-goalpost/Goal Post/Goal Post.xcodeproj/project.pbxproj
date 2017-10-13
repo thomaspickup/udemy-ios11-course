@@ -15,6 +15,7 @@
 		FE3FAEAD1F8A30FE000D482C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3FAEAB1F8A30FE000D482C /* LaunchScreen.storyboard */; };
 		FE570AEB1F8C049A00BC14CE /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE570AEA1F8C049A00BC14CE /* GoalCell.swift */; };
 		FECFD3FB1F911FF9003DC20B /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD3FA1F911FF9003DC20B /* UIViewControllerExt.swift */; };
+		FECFD3FD1F912420003DC20B /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD3FC1F912420003DC20B /* UIViewExt.swift */; };
 		FEDDCF351F900B1100A37F95 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDCF341F900B1100A37F95 /* GoalType.swift */; };
 		FEDDCF3A1F900E7B00A37F95 /* vcCreateGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDCF391F900E7B00A37F95 /* vcCreateGoal.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		FE3FAEAE1F8A30FE000D482C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE570AEA1F8C049A00BC14CE /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		FECFD3FA1F911FF9003DC20B /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		FECFD3FC1F912420003DC20B /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		FEDDCF341F900B1100A37F95 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		FEDDCF391F900E7B00A37F95 /* vcCreateGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcCreateGoal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FECFD3FA1F911FF9003DC20B /* UIViewControllerExt.swift */,
+				FECFD3FC1F912420003DC20B /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				FEDDCF351F900B1100A37F95 /* GoalType.swift in Sources */,
 				FE3FAEA21F8A30FE000D482C /* vcGoals.swift in Sources */,
 				FEDDCF3A1F900E7B00A37F95 /* vcCreateGoal.swift in Sources */,
+				FECFD3FD1F912420003DC20B /* UIViewExt.swift in Sources */,
 				FE3FAEA01F8A30FE000D482C /* AppDelegate.swift in Sources */,
 				FECFD3FB1F911FF9003DC20B /* UIViewControllerExt.swift in Sources */,
 				FE3FAEA81F8A30FE000D482C /* Goal_Post.xcdatamodeld in Sources */,
