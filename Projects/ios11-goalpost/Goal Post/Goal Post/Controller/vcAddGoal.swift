@@ -38,4 +38,8 @@ class vcAddGoal: UIViewController, UITextFieldDelegate {
         self.goalDescription = description
         self.goalType = type
     }
+    
+    func save(completion: (_ finsihed: Bool) -> ()) {
+        
+    }
 }
