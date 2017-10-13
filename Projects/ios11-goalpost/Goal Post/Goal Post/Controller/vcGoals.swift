@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+let appdelegate = UIApplication.shared.delegate as? AppDelegate
+
 class vcGoals: UIViewController {
     // Outlets
     @IBOutlet weak var TableView: UITableView!

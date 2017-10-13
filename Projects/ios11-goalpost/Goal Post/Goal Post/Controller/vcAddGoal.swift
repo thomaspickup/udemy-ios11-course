@@ -27,7 +27,13 @@ class vcAddGoal: UIViewController, UITextFieldDelegate {
     
     // Actions
     @IBAction func onCreateGoalPressed(_ sender: Any) {
-        // Pass data to core data
+        if txtProgress != nil {
+            self.save { (success) in
+                if success {
+                    dismiss(animated: true, completion: nil)
+                }
+            }
+        }
     }
     @IBAction func onBackPressed(_ sender: Any) {
         dismissDetails()
@@ -40,6 +46,30 @@ class vcAddGoal: UIViewController, UITextFieldDelegate {
     }
     
     func save(completion: (_ finsihed: Bool) -> ()) {
+        guard let managedContext = appdelegate?.persistentContainer.viewContext else { return }
         
+        let goal = Goal(context: managedContext)
+        
+        goal.goalDescription = goalDescription
+        goal.goalType = goalType.rawValue
+        goal.goalCompletionValue = Int32(txtProgress.text!)!
+        goal.goalProgressValue = Int32(0)
+        
+        do {
+            try managedContext.save()
+            debugPrint("Saved Data")
+            completion(true)
+        } catch {
+            debugPrint("Could not save")
+            completion(false)
+        }
     }
 }
+
+
+
+
+
+
+
+
