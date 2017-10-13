@@ -35,6 +35,7 @@ class vcAddGoal: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
     @IBAction func onBackPressed(_ sender: Any) {
         dismissDetails()
     }
