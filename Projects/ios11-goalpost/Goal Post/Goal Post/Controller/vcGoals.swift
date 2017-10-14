@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+let appdelegate = UIApplication.shared.delegate as? AppDelegate
+
 class vcGoals: UIViewController {
     // Outlets
     @IBOutlet weak var TableView: UITableView!
@@ -29,7 +31,9 @@ class vcGoals: UIViewController {
 
     // Actions
     @IBAction func onGoalButtonPressed(_ sender: Any) {
+        guard let vcCreateGoal = storyboard?.instantiateViewController(withIdentifier: "vcCreateGoal") else { return }
         
+        presentDetails(vcCreateGoal)
     }
     
     // Functions
