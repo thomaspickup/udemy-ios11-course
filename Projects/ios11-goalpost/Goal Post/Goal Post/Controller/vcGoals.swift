@@ -14,6 +14,7 @@ let appdelegate = UIApplication.shared.delegate as? AppDelegate
 class vcGoals: UIViewController {
     // Outlets
     @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var UndoViewHeight: NSLayoutConstraint!
     
     // Variables
     
@@ -35,7 +36,6 @@ class vcGoals: UIViewController {
         super.viewWillAppear(animated)
         
         fetchCoreData()
-        
         
         TableView.reloadData()
     }
