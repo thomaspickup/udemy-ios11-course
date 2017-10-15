@@ -34,13 +34,8 @@ class vcGoals: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.fetch { (complete) in
-            if goals.count >= 1 {
-                TableView.isHidden = false
-            } else {
-                TableView.isHidden = true
-            }
-        }
+        fetchCoreData()
+        
         
         TableView.reloadData()
     }
@@ -53,7 +48,15 @@ class vcGoals: UIViewController {
     }
     
     // Functions
-    
+    func fetchCoreData() {
+        self.fetch { (complete) in
+            if goals.count >= 1 {
+                TableView.isHidden = false
+            } else {
+                TableView.isHidden = true
+            }
+        }
+    }
 }
 
 // Extensions
@@ -75,6 +78,26 @@ extension vcGoals: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeGoal(atIndexPath: indexPath)
+            self.fetchCoreData()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        
+        deleteAction.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        
+        return [deleteAction]
+    }
 }
 
 extension vcGoals {
@@ -89,6 +112,19 @@ extension vcGoals {
         } catch {
             debugPrint("Failed to fetch")
             completion(false)
+        }
+    }
+    
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        guard let managedConext = appdelegate?.persistentContainer.viewContext else { return }
+        
+        managedConext.delete(goals[indexPath.row])
+        
+        do {
+            try managedConext.save()
+            debugPrint("Removed Goal")
+        } catch {
+            debugPrint("Could not save changes")
         }
     }
 }
