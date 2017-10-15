@@ -13,6 +13,7 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var lblGoalDesc: UILabel!
     @IBOutlet weak var lblGoalType: UILabel!
     @IBOutlet weak var lblGoalProgress: UILabel!
+    @IBOutlet weak var completionView: UIView!
     
     // Variables
     
@@ -29,5 +30,11 @@ class GoalCell: UITableViewCell {
         self.lblGoalDesc.text = goal.goalDescription
         self.lblGoalType.text = goal.goalType
         self.lblGoalProgress.text = String(describing: goal.goalProgressValue)
+        
+        if goal.goalProgressValue == goal.goalCompletionValue {
+            self.completionView.isHidden = false
+        } else {
+            self.completionView.isHidden = true
+        }
     }
 }
