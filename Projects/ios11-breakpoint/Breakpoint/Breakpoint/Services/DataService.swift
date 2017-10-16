@@ -16,11 +16,13 @@ class DataService {
     // Variables
     static let instance = DataService()
     
+    //      Private
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_GROUPS = DB_BASE.child("groups")
     private var _REF_FEED = DB_BASE.child("feed")
     
+    //      Public
     var REF_BASE: DatabaseReference {
         return _REF_BASE
     }
@@ -34,5 +36,8 @@ class DataService {
         return _REF_FEED
     }
     
-    
+    // Functions
+    func createDBUser(uid: String, userData: Dictionary<String, Any>) {
+        REF_USERS.child(uid).updateChildValues(userData)
+    }
 }
