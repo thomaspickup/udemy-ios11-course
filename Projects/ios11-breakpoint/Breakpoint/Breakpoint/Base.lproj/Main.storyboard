@@ -92,7 +92,7 @@
         <!--vcLogin-->
         <scene sceneID="01s-Ct-D3h">
             <objects>
-                <viewController title="vcLogin" id="0GQ-1M-E37" sceneMemberID="viewController">
+                <viewController title="vcLogin" id="0GQ-1M-E37" customClass="vcLogin" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dlO-at-jqd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,7 +191,7 @@
         <!--vcEmailSignIn-->
         <scene sceneID="3ek-FZ-Aw1">
             <objects>
-                <viewController title="vcEmailSignIn" id="xv8-cv-Q56" sceneMemberID="viewController">
+                <viewController title="vcEmailSignIn" id="xv8-cv-Q56" customClass="vcEmailSignIn" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nql-5J-gG4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
