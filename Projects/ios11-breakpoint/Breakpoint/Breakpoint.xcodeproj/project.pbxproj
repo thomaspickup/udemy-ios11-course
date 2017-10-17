@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		63D23BEAA432CBCCBEB5871F /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740046CF1145FB64E7BA6716 /* Pods_Breakpoint.framework */; };
+		FE290AA41F96974E0093F4E2 /* vcLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE290AA31F96974E0093F4E2 /* vcLogin.swift */; };
+		FE290AA61F9697690093F4E2 /* vcEmailSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE290AA51F9697690093F4E2 /* vcEmailSignIn.swift */; };
+		FE290AA81F96981F0093F4E2 /* InSetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE290AA71F96981F0093F4E2 /* InSetTextField.swift */; };
+		FE290AAA1F969BBE0093F4E2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE290AA91F969BBE0093F4E2 /* ShadowView.swift */; };
 		FE76AE301F93C3120090356F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76AE2F1F93C3120090356F /* AppDelegate.swift */; };
 		FE76AE321F93C3120090356F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76AE311F93C3120090356F /* FirstViewController.swift */; };
 		FE76AE341F93C3120090356F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76AE331F93C3120090356F /* SecondViewController.swift */; };
@@ -22,6 +26,10 @@
 		740046CF1145FB64E7BA6716 /* Pods_Breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7251A16C656E3D07E7304B1 /* Pods-Breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 		C38C122C74A5AFDBFB42070C /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
+		FE290AA31F96974E0093F4E2 /* vcLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcLogin.swift; sourceTree = "<group>"; };
+		FE290AA51F9697690093F4E2 /* vcEmailSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcEmailSignIn.swift; sourceTree = "<group>"; };
+		FE290AA71F96981F0093F4E2 /* InSetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSetTextField.swift; sourceTree = "<group>"; };
+		FE290AA91F969BBE0093F4E2 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		FE76AE2C1F93C3120090356F /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE76AE2F1F93C3120090356F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE76AE311F93C3120090356F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,8 @@
 			children = (
 				FE76AE311F93C3120090356F /* FirstViewController.swift */,
 				FE76AE331F93C3120090356F /* SecondViewController.swift */,
+				FE290AA31F96974E0093F4E2 /* vcLogin.swift */,
+				FE290AA51F9697690093F4E2 /* vcEmailSignIn.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +121,8 @@
 		FE76AE441F93C38C0090356F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE290AA91F969BBE0093F4E2 /* ShadowView.swift */,
+				FE290AA71F96981F0093F4E2 /* InSetTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,9 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE76AE341F93C3120090356F /* SecondViewController.swift in Sources */,
+				FE290AA81F96981F0093F4E2 /* InSetTextField.swift in Sources */,
 				FE76AE301F93C3120090356F /* AppDelegate.swift in Sources */,
+				FE290AA41F96974E0093F4E2 /* vcLogin.swift in Sources */,
+				FE290AAA1F969BBE0093F4E2 /* ShadowView.swift in Sources */,
 				FE76AE321F93C3120090356F /* FirstViewController.swift in Sources */,
 				FE76AE4B1F93F0B60090356F /* DataService.swift in Sources */,
+				FE290AA61F9697690093F4E2 /* vcEmailSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
