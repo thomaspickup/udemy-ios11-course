@@ -10,6 +10,17 @@ import Foundation
 import Firebase
 
 class AuthService {
+    // Singleton
     static let instance = AuthService()
     
+    // Variables
+    
+    // Functions
+    func registerUser() {
+        
+    }
+    
+    func loginUser() {
+        
+    }
 }
