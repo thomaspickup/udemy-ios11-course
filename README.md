@@ -1,6 +1,6 @@
-# iOS 11 & Swift 4: From Beginner to Paid Professional
+# <img src="https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/Homepage/IOS_11_logo.png?raw=true" height="40"/> iOS 11 & Swift 4: From Beginner to Paid Professional
 
-<img src="https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/Homepage/97f62493947994420825ea9cd34446b7.jpg?raw=true" width="100%"/>
+
 
 The **iOS 11 & Swift 4: From Beginner to Paid Professional** course is run by an amazing group of instructors called Devslopes. I found this course through [Udemy](https://www.udemy.com/devslopes-ios11/) but you can also get it from their [website](https://devslopes.com/). 
 
