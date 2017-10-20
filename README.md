@@ -1,4 +1,4 @@
-# iOS 11 & Swift 4: From Beginner to Paid Professional
+# <img src="https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/Homepage/IOS_11_logo.png?raw=true" height="40"/> iOS 11 & Swift 4: From Beginner to Paid Professional
 
 
 
