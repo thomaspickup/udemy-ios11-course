@@ -13,4 +13,11 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblMessage: UILabel!
     @IBOutlet weak var lblUsername: UILabel!
+    
+    // Functions
+    func configureCell(profileImage: UIImage, email: String, content: String) {
+        self.imgProfile.image = profileImage
+        self.lblMessage.text = content
+        self.lblUsername.text = email
+    }
 }
