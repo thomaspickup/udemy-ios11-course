@@ -14,7 +14,7 @@ Coder Swag     | &#10003;   | &#10003;        | [Link](https://github.com/thomas
 Window Shopper | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-window)
 Smack          | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-smack)
 Pixel City     | &#10003;   | -               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-pixelcity)
-Daily Dose     | &#10003;   | -               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-dailydose)
+Daily Dose     | &#10003;   | &#10003;        | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-dailydose)
 Goal Post      | &#10003;   | -               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-goalpost)
 BreakPoint     | -          | -               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-breakpoint)
 Vision         | X          | X               | [Link](https://github.com/thomaspickup/udemy-ios11-course/tree/master/Projects/ios11-vision)
