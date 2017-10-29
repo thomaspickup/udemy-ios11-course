@@ -22,6 +22,9 @@ class vcPost: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DataService.instance.getUsername(forUID: (Auth.auth().currentUser?.uid)!) { (returnedUser) in
+            self.lblUser.text = returnedUser
+        }
         txtMessage.delegate = self
         btnSend.bindToKeyboard()
         imgProfile.image = #imageLiteral(resourceName: "defaultProfileImage")

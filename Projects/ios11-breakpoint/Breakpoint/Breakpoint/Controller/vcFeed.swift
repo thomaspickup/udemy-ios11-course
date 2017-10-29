@@ -50,7 +50,9 @@ extension vcFeed: UITableViewDelegate, UITableViewDataSource {
         let image = #imageLiteral(resourceName: "defaultProfileImage")
         let message = messageArray[indexPath.row]
         
-        cell.configureCell(profileImage: image, email: message.senderID, content: message.content)
+        DataService.instance.getUsername(forUID: message.senderID) { (returnedUser) in
+            cell.configureCell(profileImage: image, email: returnedUser, content: message.content)
+        }
         
         return cell
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class vcMe: UIViewController {
     // Outlets
@@ -19,6 +20,10 @@ class vcMe: UIViewController {
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DataService.instance.getUsername(forUID: (Auth.auth().currentUser?.uid)!) { (returnedUser) in
+            self.lblUsers.text = returnedUser
+        }
     }
     
     // Actions
