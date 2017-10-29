@@ -18,11 +18,22 @@ class vcEmailSignIn: UIViewController {
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtEmail.delegate = self
+        txtPassword.delegate = self
     }
     
     // Actions
     @IBAction func onSignInPressed(_ sender: Any) {
     }
+
+    @IBAction func onClosePressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     // Functions
+}
+
+extension vcLogin: UITextFieldDelegate {
+    
 }
