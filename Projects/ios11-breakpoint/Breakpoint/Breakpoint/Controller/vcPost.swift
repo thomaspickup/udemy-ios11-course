@@ -13,22 +13,30 @@ class vcPost: UIViewController {
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblUser: UILabel!
     @IBOutlet weak var txtMessage: UITextView!
+    @IBOutlet weak var btnSend: UIButton!
     
     // Variables
     
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        txtMessage.delegate = self
     }
     
     // Actions
     @IBAction func onSendPressed(_ sender: Any) {
+        
     }
     
     @IBAction func onExitPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     // Functions
+}
+
+extension vcPost: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        txtMessage.text = ""
+    }
 }

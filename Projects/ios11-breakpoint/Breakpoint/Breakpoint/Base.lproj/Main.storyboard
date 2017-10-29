@@ -621,6 +621,7 @@
                         <viewLayoutGuide key="safeArea" id="8mm-jx-C7u"/>
                     </view>
                     <connections>
+                        <outlet property="btnSend" destination="Nof-bn-tME" id="V1P-cN-Y0e"/>
                         <outlet property="imgProfile" destination="OR8-We-SJK" id="Ud7-iU-G1c"/>
                         <outlet property="lblUser" destination="ibj-Sy-ovi" id="neM-t2-zs4"/>
                         <outlet property="txtMessage" destination="lRu-M6-JJK" id="f0g-YK-UAt"/>
