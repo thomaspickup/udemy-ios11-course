@@ -23,6 +23,7 @@ class vcMe: UIViewController {
     
     // Actions
     @IBAction func onSignOutPressed(_ sender: Any) {
+        
     }
     
     // Functions
