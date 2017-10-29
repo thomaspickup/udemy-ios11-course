@@ -10,6 +10,8 @@ import UIKit
 
 class vcEmailSignIn: UIViewController {
     // Outlets
+    @IBOutlet weak var txtEmail: InSetTextField!
+    @IBOutlet weak var txtPassword: InSetTextField!
     
     // Variables
     
@@ -19,6 +21,8 @@ class vcEmailSignIn: UIViewController {
     }
     
     // Actions
+    @IBAction func onSignInPressed(_ sender: Any) {
+    }
     
     // Functions
 }

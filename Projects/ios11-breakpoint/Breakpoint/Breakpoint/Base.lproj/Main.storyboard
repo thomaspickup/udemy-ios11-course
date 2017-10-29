@@ -348,6 +348,9 @@
                                 <state key="normal" title="sign in">
                                     <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignInPressed:" destination="xv8-cv-Q56" eventType="touchUpInside" id="GOQ-hG-CmA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -362,6 +365,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8u5-NH-gz3"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="ia9-KW-wRe" id="Zi9-bu-0L6"/>
+                        <outlet property="txtPassword" destination="Diu-PH-ME1" id="HT1-ad-e6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgv-xj-YEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
