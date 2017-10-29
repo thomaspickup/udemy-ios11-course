@@ -5,4 +5,5 @@ We utilised the Google AdMob framework to display an advert, to get rid of the a
 
 ## Screenshots
 <img src="https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/6.%20Daily%20Dose/main.png?raw=true" width="300"/>
-## [:back: To Course Home](https://github.com/thomaspickup/udemy-ios11-course#money_with_wings-window-shopper)
+
+## [:back: To Course Home](https://github.com/thomaspickup/udemy-ios11-course)
