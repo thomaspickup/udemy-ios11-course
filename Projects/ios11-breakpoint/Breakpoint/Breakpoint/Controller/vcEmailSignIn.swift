@@ -9,27 +9,50 @@
 import UIKit
 
 class vcEmailSignIn: UIViewController {
-
+    // Outlets
+    @IBOutlet weak var txtEmail: InSetTextField!
+    @IBOutlet weak var txtPassword: InSetTextField!
+    
+    // Variables
+    
+    // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        txtEmail.delegate = self
+        txtPassword.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Actions
+    @IBAction func onSignInPressed(_ sender: Any) {
+        if txtEmail.text != nil && txtPassword.text != nil {
+            AuthService.instance.loginUser(withEmail: txtEmail.text!, withPassword: txtPassword.text!, userLoginComplete: { (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: error?.localizedDescription))
+                }
+                
+                AuthService.instance.registerUser(withEmail: self.txtEmail.text!, withPassword: self.txtPassword.text!, userCreationComplete: { (success, error) in
+                    if success {
+                        AuthService.instance.loginUser(withEmail: self.txtEmail.text!, withPassword: self.txtPassword.text!, userLoginComplete: { (success, nil) in
+                            self.dismiss(animated: true, completion: nil)
+                        })
+                    } else {
+                        print(String(describing: error?.localizedDescription))
+                    }
+                })
+            })
+        }
     }
-    */
 
+    @IBAction func onClosePressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // Functions
+}
+
+extension vcEmailSignIn: UITextFieldDelegate {
+    
 }
