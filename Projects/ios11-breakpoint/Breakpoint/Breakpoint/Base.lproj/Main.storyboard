@@ -220,6 +220,9 @@
                                                 <state key="normal" title="facebook">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onFacebookPressed:" destination="0GQ-1M-E37" eventType="touchUpInside" id="MPH-YJ-H7v"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8L-EP-w7p">
                                                 <rect key="frame" x="0.0" y="119" width="303" height="58"/>
@@ -228,6 +231,9 @@
                                                 <state key="normal" title="google">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onGooglePressed:" destination="0GQ-1M-E37" eventType="touchUpInside" id="02u-j2-XFe"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HId-N3-rDP">
                                                 <rect key="frame" x="0.0" y="187" width="303" height="71"/>
@@ -246,6 +252,9 @@
                                         <state key="normal" title=" email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onEmailPressed:" destination="0GQ-1M-E37" eventType="touchUpInside" id="uLG-oa-bLI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
