@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class vcPost: UIViewController {
     // Outlets
@@ -26,7 +27,18 @@ class vcPost: UIViewController {
     
     // Actions
     @IBAction func onSendPressed(_ sender: Any) {
-        
+        if txtMessage.text != nil && txtMessage.text != "Say Something Here..." {
+            btnSend.isEnabled = false
+            DataService.instance.uploadPost(withMessage: txtMessage.text, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, sendComplete: { (isComplete) in
+                if isComplete {
+                    self.btnSend.isEnabled = true
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.btnSend.isEnabled = true
+                    print("There was an error")
+                }
+            })
+        }
     }
     
     @IBAction func onExitPressed(_ sender: Any) {
