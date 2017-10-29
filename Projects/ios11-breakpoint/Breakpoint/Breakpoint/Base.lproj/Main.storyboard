@@ -35,6 +35,9 @@
                                         <state key="normal" image="compose">
                                             <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="UbP-4e-fvA" kind="presentation" id="Qc9-gf-Gf3"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujp-jz-Es9">
                                         <rect key="frame" x="160.5" y="35" width="54.5" height="21"/>
@@ -516,10 +519,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Vc Post-->
         <scene sceneID="EhU-Bj-lBh">
             <objects>
-                <viewController id="UbP-4e-fvA" sceneMemberID="viewController">
+                <viewController id="UbP-4e-fvA" customClass="vcPost" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0wG-vs-DYT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,8 +540,8 @@
                                         <color key="textColor" red="0.56078431370000004" green="0.7843137255" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDc-6O-zMt">
-                                        <rect key="frame" x="8" y="32" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDc-6O-zMt">
+                                        <rect key="frame" x="20" y="30" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="EAy-cV-pGx"/>
                                             <constraint firstAttribute="height" constant="30" id="S6g-RB-hlG"/>
@@ -546,15 +549,18 @@
                                         <state key="normal" image="close">
                                             <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onExitPressed:" destination="UbP-4e-fvA" eventType="touchUpInside" id="KOj-xy-eN4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="7au-Jt-cds"/>
                                     <constraint firstItem="MZm-Rc-RN3" firstAttribute="centerX" secondItem="pbw-A9-TNI" secondAttribute="centerX" id="aVP-MD-23C"/>
+                                    <constraint firstItem="oDc-6O-zMt" firstAttribute="leading" secondItem="pbw-A9-TNI" secondAttribute="leading" constant="20" id="fqG-gg-YQB"/>
                                     <constraint firstItem="MZm-Rc-RN3" firstAttribute="centerY" secondItem="oDc-6O-zMt" secondAttribute="centerY" id="hLS-1f-Nfh"/>
-                                    <constraint firstItem="oDc-6O-zMt" firstAttribute="top" secondItem="pbw-A9-TNI" secondAttribute="top" constant="30" id="jne-hi-fKn"/>
-                                    <constraint firstAttribute="trailing" secondItem="oDc-6O-zMt" secondAttribute="leading" constant="20" id="kUm-5A-WTm"/>
+                                    <constraint firstItem="oDc-6O-zMt" firstAttribute="top" secondItem="pbw-A9-TNI" secondAttribute="top" constant="30" id="mAM-iO-GwL"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OR8-We-SJK">
@@ -589,6 +595,9 @@
                                 <state key="normal" title=" send" image="send">
                                     <color key="titleColor" red="0.56078431370000004" green="0.7843137255" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSendPressed:" destination="UbP-4e-fvA" eventType="touchUpInside" id="ku1-Vj-55P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -611,6 +620,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8mm-jx-C7u"/>
                     </view>
+                    <connections>
+                        <outlet property="imgProfile" destination="OR8-We-SJK" id="Ud7-iU-G1c"/>
+                        <outlet property="lblUser" destination="ibj-Sy-ovi" id="neM-t2-zs4"/>
+                        <outlet property="txtMessage" destination="lRu-M6-JJK" id="f0g-YK-UAt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMv-G2-nR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
