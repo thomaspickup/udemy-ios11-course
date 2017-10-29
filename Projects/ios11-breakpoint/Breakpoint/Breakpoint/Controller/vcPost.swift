@@ -24,6 +24,7 @@ class vcPost: UIViewController {
         
         txtMessage.delegate = self
         btnSend.bindToKeyboard()
+        imgProfile.image = #imageLiteral(resourceName: "defaultProfileImage")
     }
     
     // Actions
