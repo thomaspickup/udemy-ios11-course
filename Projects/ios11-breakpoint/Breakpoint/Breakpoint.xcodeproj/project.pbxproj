@@ -24,6 +24,7 @@
 		FE8B0C8A1FA5E30900D1444E /* vcMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C891FA5E30900D1444E /* vcMe.swift */; };
 		FE8B0C8C1FA5F8AF00D1444E /* vcPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C8B1FA5F8AF00D1444E /* vcPost.swift */; };
 		FE8B0C8E1FA5FD3A00D1444E /* extUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C8D1FA5FD3A00D1444E /* extUIView.swift */; };
+		FECE71481FA629EE007091CE /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE71471FA629EE007091CE /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FE8B0C891FA5E30900D1444E /* vcMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcMe.swift; sourceTree = "<group>"; };
 		FE8B0C8B1FA5F8AF00D1444E /* vcPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcPost.swift; sourceTree = "<group>"; };
 		FE8B0C8D1FA5FD3A00D1444E /* extUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extUIView.swift; sourceTree = "<group>"; };
+		FECE71471FA629EE007091CE /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				FE290AA91F969BBE0093F4E2 /* ShadowView.swift */,
 				FE290AA71F96981F0093F4E2 /* InSetTextField.swift */,
+				FECE71471FA629EE007091CE /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE76AE341F93C3120090356F /* vcGroups.swift in Sources */,
+				FECE71481FA629EE007091CE /* FeedCell.swift in Sources */,
 				FE290AA81F96981F0093F4E2 /* InSetTextField.swift in Sources */,
 				FE76AE301F93C3120090356F /* AppDelegate.swift in Sources */,
 				FE290AAC1F9A9A670093F4E2 /* AuthService.swift in Sources */,
