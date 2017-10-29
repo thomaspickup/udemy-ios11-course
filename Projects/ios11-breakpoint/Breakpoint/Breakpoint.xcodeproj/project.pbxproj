@@ -21,6 +21,7 @@
 		FE76AE3C1F93C3120090356F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE76AE3A1F93C3120090356F /* LaunchScreen.storyboard */; };
 		FE76AE491F93C4F10090356F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE76AE481F93C4F10090356F /* GoogleService-Info.plist */; };
 		FE76AE4B1F93F0B60090356F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76AE4A1F93F0B60090356F /* DataService.swift */; };
+		FE8B0C8A1FA5E30900D1444E /* vcMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C891FA5E30900D1444E /* vcMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FE76AE3D1F93C3120090356F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE76AE481F93C4F10090356F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE76AE4A1F93F0B60090356F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FE8B0C891FA5E30900D1444E /* vcMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				FE76AE331F93C3120090356F /* vcGroups.swift */,
 				FE290AA31F96974E0093F4E2 /* vcLogin.swift */,
 				FE290AA51F9697690093F4E2 /* vcEmailSignIn.swift */,
+				FE8B0C891FA5E30900D1444E /* vcMe.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				FE290AAA1F969BBE0093F4E2 /* ShadowView.swift in Sources */,
 				FE76AE321F93C3120090356F /* vcFeed.swift in Sources */,
 				FE76AE4B1F93F0B60090356F /* DataService.swift in Sources */,
+				FE8B0C8A1FA5E30900D1444E /* vcMe.swift in Sources */,
 				FE290AA61F9697690093F4E2 /* vcEmailSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
