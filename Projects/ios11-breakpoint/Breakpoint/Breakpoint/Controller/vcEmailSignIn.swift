@@ -25,6 +25,25 @@ class vcEmailSignIn: UIViewController {
     
     // Actions
     @IBAction func onSignInPressed(_ sender: Any) {
+        if txtEmail.text != nil && txtPassword.text != nil {
+            AuthService.instance.loginUser(withEmail: txtEmail.text!, withPassword: txtPassword.text!, userLoginComplete: { (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: error?.localizedDescription))
+                }
+                
+                AuthService.instance.registerUser(withEmail: self.txtEmail.text!, withPassword: self.txtPassword.text!, userCreationComplete: { (success, error) in
+                    if success {
+                        AuthService.instance.loginUser(withEmail: self.txtEmail.text!, withPassword: self.txtPassword.text!, userLoginComplete: { (success, nil) in
+                            self.dismiss(animated: true, completion: nil)
+                        })
+                    } else {
+                        print(String(describing: error?.localizedDescription))
+                    }
+                })
+            })
+        }
     }
 
     @IBAction func onClosePressed(_ sender: Any) {
@@ -34,6 +53,6 @@ class vcEmailSignIn: UIViewController {
     // Functions
 }
 
-extension vcLogin: UITextFieldDelegate {
+extension vcEmailSignIn: UITextFieldDelegate {
     
 }
