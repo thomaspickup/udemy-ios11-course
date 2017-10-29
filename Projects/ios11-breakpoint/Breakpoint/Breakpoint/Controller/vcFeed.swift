@@ -9,17 +9,51 @@
 import UIKit
 
 class vcFeed: UIViewController {
-
+    // Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
+    // Variables
+    var messageArray = [Message]()
+    // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DataService.instance.getAllFeedMessages { (returned) in
+            self.messageArray = returned.reversed()
+            self.tableView.reloadData()
+        }
     }
-
-
+    // Actions
+    
+    // Functions
+    
 }
 
+extension vcFeed: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messageArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") as? FeedCell else { return UITableViewCell() }
+        
+        let image = #imageLiteral(resourceName: "defaultProfileImage")
+        let message = messageArray[indexPath.row]
+        
+        DataService.instance.getUsername(forUID: message.senderID) { (returnedUser) in
+            cell.configureCell(profileImage: image, email: returnedUser, content: message.content)
+        }
+        
+        return cell
+    }
+}
