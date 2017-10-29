@@ -28,7 +28,22 @@ class vcMe: UIViewController {
     
     // Actions
     @IBAction func onSignOutPressed(_ sender: Any) {
+        let logoutPopup = UIAlertController(title: "Log Out?", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
+        let logoutAction = UIAlertAction(title: "Log Out", style: .destructive) { (buttonTapped) in
+            do{
+                try Auth.auth().signOut()
+                let vcLogin = self.storyboard?.instantiateViewController(withIdentifier: "vcLogin") as? vcLogin
+                self.present(vcLogin!, animated: true, completion: nil)
+            } catch {
+                print(error)
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
+        logoutPopup.addAction(logoutAction)
+        logoutPopup.addAction(cancelAction)
+        
+        present(logoutPopup, animated: true, completion: nil)
     }
     
     // Functions
