@@ -23,6 +23,7 @@ class vcPost: UIViewController {
         super.viewDidLoad()
         
         txtMessage.delegate = self
+        btnSend.bindToKeyboard()
     }
     
     // Actions
@@ -44,7 +45,9 @@ class vcPost: UIViewController {
     @IBAction func onExitPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     // Functions
+    
 }
 
 extension vcPost: UITextViewDelegate {
