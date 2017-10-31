@@ -234,10 +234,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Vc Add Group-->
         <scene sceneID="0UU-mC-Zca">
             <objects>
-                <viewController id="IZF-is-atB" sceneMemberID="viewController">
+                <viewController id="IZF-is-atB" customClass="vcAddGroup" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NXg-2f-gxK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,7 +265,7 @@
                                             <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onExitPressed:" destination="UbP-4e-fvA" eventType="touchUpInside" id="rMz-b3-zyI"/>
+                                            <action selector="onExitPressed:" destination="IZF-is-atB" eventType="touchUpInside" id="FZB-Ug-bR9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r46-MJ-fgn">
@@ -277,6 +277,9 @@
                                         <state key="normal" title="DONE">
                                             <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onDonePressed:" destination="IZF-is-atB" eventType="touchUpInside" id="Mub-xb-eTw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -371,6 +374,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KES-Rn-CSg"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="V3a-An-rC2" id="UJR-a0-EIQ"/>
+                        <outlet property="txtDescription" destination="Dob-37-njO" id="8Kv-d5-9P4"/>
+                        <outlet property="txtEmail" destination="w2l-ep-bVJ" id="Uih-Zb-7H1"/>
+                        <outlet property="txtTitle" destination="PMa-vj-H0U" id="qWs-sW-svx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Dh-Yv-Mv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
