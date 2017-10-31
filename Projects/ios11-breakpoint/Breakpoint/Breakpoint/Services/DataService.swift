@@ -62,9 +62,9 @@ class DataService {
                 let message = Message(content: content, senderID: senderID)
                 
                 messageArray.append(message)
-                
-                handler(messageArray)
             }
+            
+            handler(messageArray)
         }
     }
     
