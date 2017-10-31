@@ -19,6 +19,9 @@ class vcAddGroup: UIViewController {
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     // Actions
@@ -31,4 +34,22 @@ class vcAddGroup: UIViewController {
     
     // Functions
     
+}
+
+extension vcAddGroup: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserCell else { return UITableViewCell() }
+        
+        cell.configureCell(profileImage: #imageLiteral(resourceName: "defaultProfileImage"), email: "Test@test.com", isSelected: false)
+        
+        return cell
+    }
 }

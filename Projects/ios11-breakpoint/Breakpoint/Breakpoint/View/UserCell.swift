@@ -20,7 +20,6 @@ class UserCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
     // Functions
@@ -29,9 +28,9 @@ class UserCell: UITableViewCell {
         self.lblUser.text = email
         
         if isSelected {
-            imgCheckmark.isHidden = false
+            self.imgCheckmark.isHidden = false
         } else {
-           imgCheckmark.isHidden = true
+           self.imgCheckmark.isHidden = true
         }
     }
 }
