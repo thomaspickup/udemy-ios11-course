@@ -27,6 +27,7 @@
 		FECE71481FA629EE007091CE /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE71471FA629EE007091CE /* FeedCell.swift */; };
 		FECE714A1FA62CE6007091CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE71491FA62CE6007091CE /* Message.swift */; };
 		FECE714C1FA91232007091CE /* vcAddGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE714B1FA91232007091CE /* vcAddGroup.swift */; };
+		FECE714E1FA917F6007091CE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE714D1FA917F6007091CE /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FECE71471FA629EE007091CE /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		FECE71491FA62CE6007091CE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FECE714B1FA91232007091CE /* vcAddGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcAddGroup.swift; sourceTree = "<group>"; };
+		FECE714D1FA917F6007091CE /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				FE290AA91F969BBE0093F4E2 /* ShadowView.swift */,
 				FE290AA71F96981F0093F4E2 /* InSetTextField.swift */,
 				FECE71471FA629EE007091CE /* FeedCell.swift */,
+				FECE714D1FA917F6007091CE /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				FE8B0C8E1FA5FD3A00D1444E /* extUIView.swift in Sources */,
 				FE290AA41F96974E0093F4E2 /* vcLogin.swift in Sources */,
 				FE290AAA1F969BBE0093F4E2 /* ShadowView.swift in Sources */,
+				FECE714E1FA917F6007091CE /* UserCell.swift in Sources */,
 				FECE714C1FA91232007091CE /* vcAddGroup.swift in Sources */,
 				FE76AE321F93C3120090356F /* vcFeed.swift in Sources */,
 				FE76AE4B1F93F0B60090356F /* DataService.swift in Sources */,

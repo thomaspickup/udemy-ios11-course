@@ -14,11 +14,19 @@ class vcAddGroup: UIViewController {
     @IBOutlet weak var txtEmail: InSetTextField!
     @IBOutlet weak var txtDescription: InSetTextField!
     @IBOutlet weak var txtTitle: InSetTextField!
+    
     // Variables
+    var emails = [String]()
     
     // View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        txtEmail.delegate = self
+        txtEmail.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
     }
     
     // Actions
@@ -30,5 +38,37 @@ class vcAddGroup: UIViewController {
     }
     
     // Functions
+    @objc func textFieldDidChanged() {
+        if txtEmail.text == "" {
+            emails = []
+            tableView.reloadData()
+        } else {
+            DataService.instance.getEmail(forSearchQuery: txtEmail.text!, handler: { (emailArray) in
+                self.emails = emailArray
+                self.tableView.reloadData()
+            })
+        }
+    }
+}
+
+extension vcAddGroup: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return emails.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserCell else { return UITableViewCell() }
+        
+        cell.configureCell(profileImage: #imageLiteral(resourceName: "defaultProfileImage"), email: emails[indexPath.row], isSelected: false)
+        
+        return cell
+    }
+}
+
+extension vcAddGroup: UITextFieldDelegate {
     
 }
