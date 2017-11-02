@@ -41,8 +41,9 @@ class vcAddGroup: UIViewController {
     @IBAction func onExitPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func onDonePressed(_ sender: Any) {
-        
+
     }
     
     // Functions

@@ -37,6 +37,7 @@ class DataService {
     }
     
     // Functions
+    // Setters
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
         REF_USERS.child(uid).updateChildValues(userData)
     }
@@ -50,6 +51,12 @@ class DataService {
         }
     }
     
+    func createGroup(withTitle title: String, andDescription description: String, forUserIds ids: [String], handler: @escaping (_ groupCreated: Bool) -> ()){
+        REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": description, "members": ids])
+        handler(true)
+    }
+    
+    // Getters
     func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
         var messageArray = [Message]()
         REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnap) in
@@ -77,6 +84,24 @@ class DataService {
                     handler(user.childSnapshot(forPath: "email").value as! String)
                 }
             }
+        }
+    }
+    
+    func getID(forUsernames usernames: [String], handler: @escaping (_ ids: [String]) -> ()) {
+        var idArray = [String]()
+        
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                
+                if usernames.contains(email) {
+                    idArray.append(user.key)
+                }
+            }
+            
+            handler(idArray)
         }
     }
     
