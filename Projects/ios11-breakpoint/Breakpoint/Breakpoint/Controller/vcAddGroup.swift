@@ -15,8 +15,10 @@ class vcAddGroup: UIViewController {
     @IBOutlet weak var txtDescription: InSetTextField!
     @IBOutlet weak var txtTitle: InSetTextField!
     
+    @IBOutlet weak var btnDone: UIButton!
     // Variables
     var emails = [String]()
+    var chosenUserArray = [String]()
     
     // View Functions
     override func viewDidLoad() {
@@ -27,6 +29,12 @@ class vcAddGroup: UIViewController {
         
         txtEmail.delegate = self
         txtEmail.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        btnDone.isHidden = true
     }
     
     // Actions
@@ -63,9 +71,26 @@ extension vcAddGroup: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserCell else { return UITableViewCell() }
         
-        cell.configureCell(profileImage: #imageLiteral(resourceName: "defaultProfileImage"), email: emails[indexPath.row], isSelected: false)
+        if chosenUserArray.contains(emails[indexPath.row]) {
+            cell.configureCell(profileImage: #imageLiteral(resourceName: "defaultProfileImage"), email: emails[indexPath.row], isSelected: true)
+        } else {
+            cell.configureCell(profileImage: #imageLiteral(resourceName: "defaultProfileImage"), email: emails[indexPath.row], isSelected: false)
+        }
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? UserCell else { return }
+        
+        if !chosenUserArray.contains(cell.lblUser.text!) {
+            chosenUserArray.append(cell.lblUser.text!)
+            btnDone.isHidden = false
+        } else {
+            chosenUserArray = chosenUserArray.filter({ $0 != cell.lblUser.text! })
+            if chosenUserArray.count == 0 {
+                btnDone.isHidden = true
+            }
+        }
     }
 }
 

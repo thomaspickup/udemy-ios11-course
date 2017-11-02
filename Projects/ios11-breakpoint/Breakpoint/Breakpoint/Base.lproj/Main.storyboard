@@ -414,6 +414,7 @@
                         <viewLayoutGuide key="safeArea" id="KES-Rn-CSg"/>
                     </view>
                     <connections>
+                        <outlet property="btnDone" destination="r46-MJ-fgn" id="ZBx-3f-T7W"/>
                         <outlet property="tableView" destination="V3a-An-rC2" id="UJR-a0-EIQ"/>
                         <outlet property="txtDescription" destination="Dob-37-njO" id="8Kv-d5-9P4"/>
                         <outlet property="txtEmail" destination="w2l-ep-bVJ" id="Uih-Zb-7H1"/>
