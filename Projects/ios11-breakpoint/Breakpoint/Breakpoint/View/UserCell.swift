@@ -15,12 +15,21 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var lblUser: UILabel!
     
     // Variables
+    var showing = false
     
-    // Default Functions
+    // Default Functions`        
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         
+        if selected {
+            if showing == false {
+               imgCheckmark.isHidden = false
+                showing = true
+            } else {
+                imgCheckmark.isHidden = true
+                showing = false
+            }
+        }
     }
 
     // Functions
