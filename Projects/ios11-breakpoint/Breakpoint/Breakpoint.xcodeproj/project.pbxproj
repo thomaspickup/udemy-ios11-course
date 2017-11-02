@@ -28,6 +28,7 @@
 		FECE714A1FA62CE6007091CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE71491FA62CE6007091CE /* Message.swift */; };
 		FECE714C1FA91232007091CE /* vcAddGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE714B1FA91232007091CE /* vcAddGroup.swift */; };
 		FECE714E1FA917F6007091CE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE714D1FA917F6007091CE /* UserCell.swift */; };
+		FECFD9A41FABC63100F62754 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD9A31FABC63100F62754 /* GroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		FECE71491FA62CE6007091CE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FECE714B1FA91232007091CE /* vcAddGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcAddGroup.swift; sourceTree = "<group>"; };
 		FECE714D1FA917F6007091CE /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FECFD9A31FABC63100F62754 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				FE290AA71F96981F0093F4E2 /* InSetTextField.swift */,
 				FECE71471FA629EE007091CE /* FeedCell.swift */,
 				FECE714D1FA917F6007091CE /* UserCell.swift */,
+				FECFD9A31FABC63100F62754 /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FE76AE341F93C3120090356F /* vcGroups.swift in Sources */,
 				FECE71481FA629EE007091CE /* FeedCell.swift in Sources */,
 				FE290AA81F96981F0093F4E2 /* InSetTextField.swift in Sources */,
+				FECFD9A41FABC63100F62754 /* GroupCell.swift in Sources */,
 				FE76AE301F93C3120090356F /* AppDelegate.swift in Sources */,
 				FE290AAC1F9A9A670093F4E2 /* AuthService.swift in Sources */,
 				FE8B0C8E1FA5FD3A00D1444E /* extUIView.swift in Sources */,
