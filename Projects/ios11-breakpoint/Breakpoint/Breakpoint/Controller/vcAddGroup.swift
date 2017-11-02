@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class vcAddGroup: UIViewController {
     // Outlets
@@ -43,7 +44,20 @@ class vcAddGroup: UIViewController {
     }
     
     @IBAction func onDonePressed(_ sender: Any) {
-
+        if txtTitle.text != "" && txtDescription.text != "" {
+            DataService.instance.getID(forUsernames: chosenUserArray, handler: { (userIDs) in
+                var idsArray = userIDs
+                idsArray.append((Auth.auth().currentUser?.uid)!)
+                
+                DataService.instance.createGroup(withTitle: self.txtTitle.text!, andDescription: self.txtDescription.text!, forUserIds: idsArray, handler: { (groupCreate) in
+                    if groupCreate {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        print("Group could not be created")
+                    }
+                })
+            })
+        }
     }
     
     // Functions

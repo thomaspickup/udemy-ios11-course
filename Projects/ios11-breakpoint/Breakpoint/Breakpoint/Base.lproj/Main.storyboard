@@ -12,6 +12,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Menlo.ttc">
+            <string>Menlo-Bold</string>
             <string>Menlo-Regular</string>
         </array>
     </customFonts>
@@ -207,6 +208,43 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nQi-cb-aUT" id="KAF-PH-mlT">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="group title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrR-UN-L8h">
+                                                    <rect key="frame" x="8" y="8" width="359" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="Iul-FC-zhf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                                    <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BhT-pT-eda">
+                                                    <rect key="frame" x="15" y="40" width="352" height="51.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="group description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEN-ZC-VuM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="352" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUI-mZ-IKA">
+                                                            <rect key="frame" x="0.0" y="31.5" width="352" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BhT-pT-eda" firstAttribute="top" secondItem="nrR-UN-L8h" secondAttribute="bottom" constant="8" id="5if-Nh-fdn"/>
+                                                <constraint firstItem="BhT-pT-eda" firstAttribute="leading" secondItem="KAF-PH-mlT" secondAttribute="leading" constant="15" id="ABi-9r-MgT"/>
+                                                <constraint firstAttribute="bottom" secondItem="BhT-pT-eda" secondAttribute="bottom" constant="8" id="EIF-4k-BrW"/>
+                                                <constraint firstItem="nrR-UN-L8h" firstAttribute="leading" secondItem="KAF-PH-mlT" secondAttribute="leading" constant="8" id="KHD-Iw-pY6"/>
+                                                <constraint firstItem="nrR-UN-L8h" firstAttribute="top" secondItem="KAF-PH-mlT" secondAttribute="top" constant="8" id="Koj-HL-u0R"/>
+                                                <constraint firstAttribute="trailing" secondItem="nrR-UN-L8h" secondAttribute="trailing" constant="8" id="KvW-Tc-wuN"/>
+                                                <constraint firstAttribute="trailing" secondItem="BhT-pT-eda" secondAttribute="trailing" constant="8" id="MLd-a9-3nA"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
