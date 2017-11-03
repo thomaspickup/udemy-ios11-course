@@ -14,8 +14,16 @@ class GroupFeedCell: UITableViewCell {
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var lblContent: UILabel!
     
+    // View Functions
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    // Functions
+    func configureCell(profileImage: UIImage, email: String, content: String) {
+        self.imgProfile.image = profileImage
+        self.lblEmail.text = email
+        self.lblContent.text = content
     }
 }
