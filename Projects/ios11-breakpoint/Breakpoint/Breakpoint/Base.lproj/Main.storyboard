@@ -475,7 +475,7 @@
         <!--Vc Group Feed-->
         <scene sceneID="268-64-KNS">
             <objects>
-                <viewController id="k9j-Ml-zPR" customClass="vcGroupFeed" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcGroupFeed" id="k9j-Ml-zPR" customClass="vcGroupFeed" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pc6-Jz-BGJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

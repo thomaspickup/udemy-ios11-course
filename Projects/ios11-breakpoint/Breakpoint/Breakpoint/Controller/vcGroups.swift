@@ -54,4 +54,10 @@ extension vcGroups: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let view = storyboard?.instantiateViewController(withIdentifier: "vcGroupFeed") as? vcGroupFeed else { return }
+        
+        present(view, animated: true, completion: nil)
+    }
 }
