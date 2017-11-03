@@ -141,4 +141,22 @@ class DataService {
             handler(groupsArray)
         }
     }
+    
+    func getEmail(forGroup group: Group, handler: @escaping (_ emailArray: [String]) -> ()) {
+        var emails = [String]()
+        
+        REF_USERS.observe(.value) { (userSnap) in
+            guard let userSnap = userSnap.children.allObjects as? [DataSnapshot] else { return }
+            
+            for users in userSnap {
+                let email = users.childSnapshot(forPath: "email").value as! String
+                
+                if group.members.contains(users.key) == true && users.key != Auth.auth().currentUser?.uid {
+                    emails.append(email)
+                }
+            }
+            
+            handler(emails)
+        }
+    }
 }

@@ -17,6 +17,7 @@ class vcGroupFeed: UIViewController {
     @IBOutlet weak var messageView: UIView!
     
     // Variables
+    var group: Group?
     
     // View Functions
     override func viewDidLoad() {
@@ -25,6 +26,14 @@ class vcGroupFeed: UIViewController {
         messageView.bindToKeyboard()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        lblTitle.text = group?.title
+        DataService.instance.getEmail(forGroup: group!) { (emailsReturned) in
+            self.lblMembers.text = emailsReturned.joined(separator: ", ")
+        }
+    }
     // Actions
     @IBAction func onBackPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -33,5 +42,7 @@ class vcGroupFeed: UIViewController {
     }
     
     // Functions
-    
+    func initData(forGroup group: Group) {
+        self.group = group
+    }
 }
