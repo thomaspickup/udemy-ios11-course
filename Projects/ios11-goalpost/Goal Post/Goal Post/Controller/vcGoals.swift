@@ -18,7 +18,7 @@ class vcGoals: UIViewController {
     
     // Variables
     
-    var goals: [Goal] = []
+    var goals = [Goal]()
     
     // View Functions
     override func viewDidLoad() {
