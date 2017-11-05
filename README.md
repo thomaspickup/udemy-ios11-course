@@ -9,7 +9,7 @@ Below I have listed my progress and links to all the course repositories, as wel
 ## Published App's
 ### Goal Post
 <a href="https://itunes.apple.com/gb/app/goal-post/id1307119931?mt=8">
-<img src="https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/7.%20Goal%20Post/gp_logo.jpg?raw=true" height="100"/> 
+<img src="https://github.com/thomaspickup/udemy-ios11-course/blob/master/Assets/7.%20Goal%20Post/gp_logo.jpg?raw=true" style="border-radius: 15px; "height="100"/> 
 </a>
 
 Goal Post - the application that was built in section 7 has been published by me to the App Store. I am planning on implementing several features on top of the ones contributed in the course. If you have any suggestions for features to include, please add it as an issue above and tag it with Enhancement.
