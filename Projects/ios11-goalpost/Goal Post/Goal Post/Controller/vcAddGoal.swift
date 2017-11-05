@@ -27,7 +27,7 @@ class vcAddGoal: UIViewController, UITextFieldDelegate {
     
     // Actions
     @IBAction func onCreateGoalPressed(_ sender: Any) {
-        if txtProgress != nil {
+        if txtProgress.text != "" {
             self.save { (success) in
                 if success {
                     dismiss(animated: true, completion: nil)
