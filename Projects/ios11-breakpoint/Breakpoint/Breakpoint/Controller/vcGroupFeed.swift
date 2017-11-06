@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class vcGroupFeed: UIViewController {
     // Outlets
@@ -25,6 +26,9 @@ class vcGroupFeed: UIViewController {
         super.viewDidLoad()
 
         messageView.bindToKeyboard()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +51,13 @@ class vcGroupFeed: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func onSendPressed(_ sender: Any) {
+        if txtMessage.text != "" {
+            let message = txtMessage.text
+            
+            DataService.instance.uploadPost(withMessage: message!, forUID: Auth.auth().currentUser!.uid, withGroupKey: group?.key, sendComplete: { (complete) in
+                self.txtMessage.text = ""
+            })
+        }
     }
     
     // Functions
