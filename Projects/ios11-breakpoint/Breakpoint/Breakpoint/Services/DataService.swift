@@ -44,7 +44,8 @@ class DataService {
     
     func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
         if groupKey != nil {
-            // TO DO: Send to groups ref
+            REF_GROUPS.child(groupKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderID": uid])
+            sendComplete(true)
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderID": uid])
             sendComplete(true)
@@ -72,6 +73,24 @@ class DataService {
             }
             
             handler(messageArray)
+        }
+    }
+    
+    func getAllGroupMessages(forDesiredGroup group: Group, handler: @escaping (_ messagesArray: [Message]) -> ()) {
+        var groupMessageArray = [Message]()
+        
+        REF_GROUPS.child(group.key).child("messages").observeSingleEvent(of: .value) { (messagesSnapshot) in
+            guard let messagesSnapshot = messagesSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for groupMessage in messagesSnapshot {
+                let content = groupMessage.childSnapshot(forPath: "content").value as! String
+                let senderID = groupMessage.childSnapshot(forPath: "senderID").value as! String
+                let message = Message(content: content, senderID: senderID)
+                
+                groupMessageArray.append(message)
+            }
+            
+            handler(groupMessageArray)
         }
     }
     
