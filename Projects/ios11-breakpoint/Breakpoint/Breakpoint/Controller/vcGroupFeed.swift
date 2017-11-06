@@ -18,6 +18,7 @@ class vcGroupFeed: UIViewController {
     
     // Variables
     var group: Group?
+    var messages = [Message]()
     
     // View Functions
     override func viewDidLoad() {
@@ -32,6 +33,13 @@ class vcGroupFeed: UIViewController {
         lblTitle.text = group?.title
         DataService.instance.getEmail(forGroup: group!) { (emailsReturned) in
             self.lblMembers.text = emailsReturned.joined(separator: ", ")
+        }
+        
+        DataService.instance.REF_GROUPS.observe(.value) { (snap) in
+            DataService.instance.getAllGroupMessages(forDesiredGroup: self.group!, handler: { (returnedMessages) in
+                self.messages = returnedMessages
+                self.tableView.reloadData()
+            })
         }
     }
     // Actions
