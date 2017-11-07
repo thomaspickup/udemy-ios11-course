@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +84,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aZW-b2-2bp">
-                                <rect key="frame" x="0.0" y="70" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="70" id="XG5-8i-5IY" customClass="GoalCell" customModule="Goal_Post" customModuleProvider="target">
@@ -186,34 +186,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPK-RJ-Noj">
-                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Mtg-Em-DP4"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aZW-b2-2bp" firstAttribute="top" secondItem="REX-pU-hJZ" secondAttribute="bottom" id="1Cc-xO-2UI"/>
                             <constraint firstItem="REX-pU-hJZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9sl-ko-AuD"/>
-                            <constraint firstAttribute="bottom" secondItem="WPK-RJ-Noj" secondAttribute="bottom" id="EO5-By-3Im"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WPK-RJ-Noj" secondAttribute="trailing" id="IKr-bN-mtu"/>
                             <constraint firstItem="evK-UO-ji9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NCE-If-vRg"/>
                             <constraint firstItem="aZW-b2-2bp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QSu-iF-NWl"/>
                             <constraint firstItem="REX-pU-hJZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VdS-g7-e39"/>
-                            <constraint firstItem="WPK-RJ-Noj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yxd-gQ-oQY"/>
                             <constraint firstItem="evK-UO-ji9" firstAttribute="top" secondItem="REX-pU-hJZ" secondAttribute="bottom" constant="75" id="adG-bd-bjY"/>
                             <constraint firstItem="aZW-b2-2bp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dy7-Y2-rRG"/>
-                            <constraint firstItem="aZW-b2-2bp" firstAttribute="bottom" secondItem="WPK-RJ-Noj" secondAttribute="bottom" constant="-70" id="o04-2b-hWv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aZW-b2-2bp" secondAttribute="bottom" id="m0k-eB-PcO"/>
                             <constraint firstItem="REX-pU-hJZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xvr-Et-Hy1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="TableView" destination="aZW-b2-2bp" id="dni-aA-AMs"/>
-                        <outlet property="UndoViewHeight" destination="Mtg-Em-DP4" id="CZj-V8-QBO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
